@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "FeidhelmJ.github.io"
@@ -16,6 +17,7 @@ format:
       - brand
     css: styles.css
     toc: true
+
 
 
 
