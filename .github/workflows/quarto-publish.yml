@@ -9,36 +9,38 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Check out the repository
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      # 1. Check out repository
+      - uses: actions/checkout@v3
 
-      # Step 2: Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      # 2. Set up Python
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.13'   # matches your local version
 
-      # Step 3: Install Quarto
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      # 3. Set up Quarto
+      - uses: quarto-dev/quarto-actions/setup@v2
 
-      # Step 4: Install Python dependencies
-      - name: Install Python dependencies
+      # 4. Install Python dependencies (if any)
+      - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
           fi
 
-      # Step 5: Render the Quarto site
+      # 5. Render Quarto site
       - name: Render site
         run: quarto render
 
-      # Step 6: Deploy to GitHub Pages
+      # 6. Optional debug: list files
+      - name: List files after render
+        run: ls -R
+
+      # 7. Publish to GitHub Pages
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: _site       # this must match the folder Quarto outputs HTML to
+          target: _site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
