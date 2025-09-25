@@ -12,3 +12,10 @@ format:
 Welcome to my Quarto website 
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{python}
+x = 5
+y = 10 
+print('The answer for this equation will be...')
+print(x+y)
+```

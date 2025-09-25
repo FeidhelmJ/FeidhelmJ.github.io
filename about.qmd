@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+The plan is to add more detail here 
