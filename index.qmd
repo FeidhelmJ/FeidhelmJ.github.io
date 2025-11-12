@@ -1,21 +1,16 @@
 ---
-title: "Welcome to My Website update"
-author: "Feidhelm Joyce"
-date: "2025-09-17"
+image: "F_Joyce_Headshot.jpeg"
 format:
   html:
     theme: journal
-    toc: true
+    toc: false
 ---
 
-#Hello, World!
-Welcome to my Quarto website 
+<div style="text-align: center; margin-top: 30px;">
+  <h1>Feidhelm Joyce's Website</h1>
+  <img src="F_Joyce_Headshot.jpeg" alt="Feidhelm Joyce" style="width:180px; border-radius: 50%; margin-top:15px;">
+</div>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Dia Dhuit! Hello and welcome to my website!
 
-```{python}
-x = 5
-y = 10 
-print('The answer for this equation will be...')
-print(x+y)
-```
+--- 
