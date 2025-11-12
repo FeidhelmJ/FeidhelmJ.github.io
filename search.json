@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nFeidhelm Joyce’s Website\n",
-    "section": "",
-    "text": "Dia Dhuit! Hello and welcome to my website!"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "The plan is to add more detail here"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nFeidhelm Joyce’s Website\n",
+    "section": "",
+    "text": "Dia Dhuit! Hello and welcome to my website!"
   }
 ]
