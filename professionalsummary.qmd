@@ -1,0 +1,11 @@
+---
+title: "Professional Summary"
+subtitle: "Business Analytics | Strategy | Leadership"
+format:
+  html:
+    theme: cosmo
+    toc: false
+    smooth-scroll: true
+    code-copy: true
+    linkcolor: "#004aad"
+---
