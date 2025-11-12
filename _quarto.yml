@@ -1,14 +1,23 @@
 project:
   type: website
-  output-dir: _site
+  
 
 website:
-  title: "FeidhelmJ.github.io"
+  title: "Feidhelm Joyce"
+  favicon: 
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: professionalsummary.qmd
+        text: Professional Summary 
+      - href: projects.qmd
+        text: Projects
+      - href: cv.qmd
+        text: CV 
+      - href: contact.qmd
+        text: Contact 
+      
 
 format:
   html:
