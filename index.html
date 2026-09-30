@@ -1,1 +1,114 @@
-<h1>EC2 Test number 1!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feidhelm Joyce — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="page-home">
+<div class="layout">
+  <header class="index">
+    <div>
+      <a class="mark" href="index.html">FJ</a>
+      <div class="id-block">
+        <h1>Feidhelm Joyce</h1>
+        <p>Business &amp; Data Analyst<br>Boston, MA</p>
+      </div>
+      <nav class="toc">
+        <a class="active" href="index.html"><span class="num">01</span>Home</a>
+        <a href="professionalsummary.html"><span class="num">02</span>Professional Summary</a>
+        <a href="academics.html"><span class="num">03</span>Academics</a>
+        <a href="projects.html"><span class="num">04</span>Projects</a>
+        <a href="gallery.html"><span class="num">05</span>Gallery</a>
+        <a href="skills.html"><span class="num">06</span>Skills</a>
+        <a href="contact.html"><span class="num">07</span>Contact</a>
+      </nav>
+    </div>
+    <div class="index-footer">
+      linkedin.com/in/feidhelmjoyce<br>
+      github.com/FeidhelmJ
+    </div>
+    <div class="mobile-nav">
+      <a class="active" href="index.html">Home</a><a href="professionalsummary.html">Professional Summary</a><a href="academics.html">Academics</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <p class="section-label">01 — HOME</p>
+      <img class="headshot" src="images/headshot.png" alt="Feidhelm Joyce" onerror="this.style.display='none';">
+      <p class="lede">Business &amp; QA Analyst at Federal Home Loan Bank Boston, finishing a Master's in Applied Business Analytics at Boston University.</p>
+      <p class="body-text">I grew up in Louth, Ireland, studied Business &amp; Management at Dublin City University, and started my career on a graduate program with Allied Irish Banks. A role at a HubSpot consultancy in Boston gave me my first real exposure to what data can do for a business — that's what brought me to BU's Applied Business Analytics program, and eventually to my current role bridging business and technical teams at FHLBank Boston.</p>
+      <p class="body-text">Outside of work, I captained my home county's senior hurling team at 21 — the youngest in its history — which taught me most of what I know about leading under pressure.</p>
+      <div class="stat-row">
+        <div class="stat"><span class="n">3.9</span><span class="l">GPA · MS BUSINESS ANALYTICS</span></div>
+        <div class="stat"><span class="n">6+</span><span class="l">STAKEHOLDER TEAMS COORDINATED</span></div>
+        <div class="stat"><span class="n">$2M+</span><span class="l">CLIENT ARR MANAGED</span></div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line); margin-top:0; padding-top:56px;">
+      <p class="section-label">PERSONAL INTERESTS</p>
+      <h2>Outside of work</h2>
+      <div id="interests-container"></div>
+    </section>
+
+    <script>
+      // Add one line per photo below. category groups photos together and
+      // controls the order they appear in. A category with no photos simply
+      // won't show up — no need to remove or comment anything out.
+      const interestPhotos = [
+        { file: "images/interest-hurling-1.jpg", category: "Hurling" },
+        { file: "images/interest-gaelic-football-1.jpg", category: "Gaelic Football" },
+        { file: "images/interest-soccer-1.jpg", category: "Soccer" },
+        { file: "images/interest-golf-1.jpg", category: "Golf" },
+        { file: "images/interest-running-1.jpg", category: "Running" },
+        { file: "images/interest-travel-1.jpg", category: "Travel" },
+        { file: "images/interest-travel-2.jpg", category: "Travel" },
+        { file: "images/interest-travel-3.jpg", category: "Travel" }
+      ];
+
+      (function renderInterestPhotos(){
+        const container = document.getElementById('interests-container');
+        const order = ["Hurling", "Gaelic Football", "Soccer", "Golf", "Running", "Travel"];
+        const grouped = {};
+        interestPhotos.forEach(p => { (grouped[p.category] = grouped[p.category] || []).push(p); });
+
+        order.forEach(cat => {
+          const items = grouped[cat];
+          if (!items || !items.length) return;
+
+          const block = document.createElement('div');
+          block.className = 'interest-block';
+
+          const label = document.createElement('p');
+          label.className = 'interest-label';
+          label.textContent = cat;
+          block.appendChild(label);
+
+          const grid = document.createElement('div');
+          grid.className = 'gallery-grid';
+
+          items.forEach(p => {
+            const fig = document.createElement('figure');
+            fig.className = 'gallery-item';
+            const img = document.createElement('img');
+            img.src = p.file;
+            img.alt = cat;
+            img.onerror = function(){ fig.style.display = 'none'; };
+            fig.appendChild(img);
+            grid.appendChild(fig);
+          });
+
+          block.appendChild(grid);
+          container.appendChild(block);
+        });
+      })();
+    </script>
+  </main>
+</div>
+</body>
+</html>

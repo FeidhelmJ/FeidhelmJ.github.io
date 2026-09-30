@@ -1,5 +1,0 @@
----
-title: "About"
----
-
-The plan is to add more detail here 
