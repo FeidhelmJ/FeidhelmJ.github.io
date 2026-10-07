@@ -167,3 +167,21 @@ p.body-text + p.body-text{margin-top:14px;}
 .greeting{font-family:var(--serif); font-size:34px; font-weight:600; max-width:none; margin:0 0 22px; line-height:1.25;}
 .gallery-grid.cols-2{grid-template-columns:1fr 1fr;}
 @media (max-width:860px){ .site-title{font-size:30px;} .greeting{font-size:26px;} .home-hero .headshot{width:160px; height:160px;} }
+
+/* Home page: centered, larger, wider */
+#page-home .layout{max-width:1480px;}
+#page-home main{text-align:center;}
+#page-home .greeting{max-width:none; margin:0 auto 26px;}
+#page-home p.body-text{font-size:17.5px; line-height:1.7; max-width:72ch; margin-left:auto; margin-right:auto;}
+#page-home p.body-text + p.body-text{margin-top:18px;}
+#page-home .home-h2{font-size:38px; max-width:none; margin:0 auto 40px;}
+#page-home #interests-container{max-width:1160px; margin:0 auto;}
+#page-home .interest-block{margin-bottom:52px;}
+#page-home .interest-label{font-family:var(--serif); font-size:24px; font-weight:600; color:var(--forest); letter-spacing:0; margin:0 0 16px;}
+#page-home .gallery-item figcaption{font-family:var(--sans); font-size:15.5px; color:var(--ink); padding:12px 14px 14px; line-height:1.45;}
+@media (max-width:860px){
+  #page-home p.body-text{font-size:16.5px;}
+  #page-home .home-h2{font-size:28px;}
+  #page-home .interest-label{font-size:20px;}
+  #page-home .gallery-item figcaption{font-size:14px;}
+}
