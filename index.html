@@ -24,14 +24,15 @@
         <details class="nav-group">
           <summary><span class="num">03</span>Academics</summary>
           <div class="nav-sub">
-          <a href="academics.html">Overview</a>
           <a href="marketing-analytics.html">Marketing Analytics</a>
+          <a href="financial-analytics.html">Financial Analytics</a>
+          <a href="data-mining.html">Data Mining for Business Analytics</a>
+          <a href="cloud-analytics.html">Cloud Analytics</a>
           </div>
         </details>
         <a href="projects.html"><span class="num">04</span>Projects</a>
-        <a href="gallery.html"><span class="num">05</span>Gallery</a>
-        <a href="skills.html"><span class="num">06</span>Skills</a>
-        <a href="contact.html"><span class="num">07</span>Contact</a>
+        <a href="skills.html"><span class="num">05</span>Skills</a>
+        <a href="contact.html"><span class="num">06</span>Contact</a>
       </nav>
     </div>
     <div class="index-footer">
@@ -39,77 +40,106 @@
       github.com/FeidhelmJ
     </div>
     <div class="mobile-nav">
-      <a class="active" href="index.html">Home</a><a href="professionalsummary.html">Professional Summary</a><a href="academics.html">Academics</a><a href="marketing-analytics.html">Marketing Analytics</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
+      <a class="active" href="index.html">Home</a><a href="professionalsummary.html">Professional Summary</a><a href="marketing-analytics.html">Marketing Analytics</a><a href="financial-analytics.html">Financial Analytics</a><a href="data-mining.html">Data Mining for Business Analytics</a><a href="cloud-analytics.html">Cloud Analytics</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
     </div>
   </header>
   <main>
     <section>
-      <p class="section-label">01 — HOME</p>
-      <img class="headshot" src="images/headshot.png" alt="Feidhelm Joyce" onerror="this.style.display='none';">
-      <p class="lede">Business &amp; QA Analyst at Federal Home Loan Bank Boston, finishing a Master's in Applied Business Analytics at Boston University.</p>
-      <p class="body-text">I grew up in Louth, Ireland, studied Business &amp; Management at Dublin City University, and started my career on a graduate program with Allied Irish Banks. A role at a HubSpot consultancy in Boston gave me my first real exposure to what data can do for a business — that's what brought me to BU's Applied Business Analytics program, and eventually to my current role bridging business and technical teams at FHLBank Boston.</p>
-      <p class="body-text">Outside of work, I captained my home county's senior hurling team at 21 — the youngest in its history — which taught me most of what I know about leading under pressure.</p>
-      <div class="stat-row">
-        <div class="stat"><span class="n">3.9</span><span class="l">GPA · MS BUSINESS ANALYTICS</span></div>
-        <div class="stat"><span class="n">6+</span><span class="l">STAKEHOLDER TEAMS COORDINATED</span></div>
-        <div class="stat"><span class="n">$2M+</span><span class="l">CLIENT ARR MANAGED</span></div>
+      <div class="home-hero">
+        <h1 class="site-title">Feidhelm Joyce's Website</h1>
+        <img class="headshot" src="images/headshot.jpg" alt="Feidhelm Joyce" onerror="this.style.display='none';">
       </div>
+      <h2 class="greeting">Dia Dhuit! Thank you for visiting my website!</h2>
+      <p class="body-text">Dia Dhuit and welcome! I'm Feidhelm Joyce, born and raised in Ireland and currently living and working in Boston, MA. Since January 2026 I've been working at the Federal Home Loan Bank of Boston as a Business &amp; Quality Assurance Analyst, and in May 2026 I completed my Master of Science in Applied Business Analytics at Boston University's Metropolitan College!</p>
+      <p class="body-text">My journey to the US started in May 2022. Having just graduated from Dublin City University with a Bachelor's in Business &amp; Management, I headed to the US with seven of my friends for the summer of a lifetime. All good things must come to an end, though, and that September I was fortunate enough to land a job on Allied Irish Banks' Financial Crime team in their Dublin office. Nine months later, in May 2023, I had the opportunity to take up a 14-month J1 work and travel visa to the United States. I seized it, and off I went!</p>
+      <p class="body-text">Once there, I joined Emeraldly, a start-up based in Somerville, MA, that helps small and medium-sized businesses get set up on the CRM platform HubSpot. All of my previous experience had been in large organisations, so this was a brilliant introduction to what it means to work in a small company.</p>
+      <p class="body-text">Working with Emeraldly also gave me a real insight into the power and value of data when it's leveraged correctly. I hadn't had the chance to specialise in anything like this during my undergrad, which got me thinking about next steps. I was lucky enough to be accepted into the Applied Business Analytics program at BU, and after a challenging, fast-paced 16 months, I graduated in May 2026 with a 3.9 GPA and plenty of lessons to take into my career, from both inside and outside the classroom.</p>
+      <p class="body-text">Before my time in the US, I grew up on the northside of Dublin, then moved to Blackrock, Co. Louth, when I was 11. It was there that I really developed my love for all things sport, and I was lucky to be part of successful hurling, Gaelic football, soccer and golf teams, picking up some silverware along the way. I'm happy to say that love hasn't faded since moving to the States!</p>
+      <p class="body-text">This website is a small insight into my experiences so far, from a professional, academic and personal perspective. Hope you enjoy!</p>
     </section>
 
     <section style="border-top:1px solid var(--line); margin-top:0; padding-top:56px;">
-      <p class="section-label">PERSONAL INTERESTS</p>
-      <h2>Outside of work</h2>
+      <p class="section-label">GET TO KNOW ME</p>
+      <h2 style="margin-bottom:32px;">Get to know me!</h2>
       <div id="interests-container"></div>
     </section>
 
     <script>
-      // Add one line per photo below. category groups photos together and
-      // controls the order they appear in. A category with no photos simply
-      // won't show up — no need to remove or comment anything out.
-      const interestPhotos = [
-        { file: "images/interest-hurling-1.jpg", category: "Hurling" },
-        { file: "images/interest-gaelic-football-1.jpg", category: "Gaelic Football" },
-        { file: "images/interest-soccer-1.jpg", category: "Soccer" },
-        { file: "images/interest-golf-1.jpg", category: "Golf" },
-        { file: "images/interest-running-1.jpg", category: "Running" },
-        { file: "images/interest-travel-1.jpg", category: "Travel" },
-        { file: "images/interest-travel-2.jpg", category: "Travel" },
-        { file: "images/interest-travel-3.jpg", category: "Travel" }
+      // Each group gets a small heading, then its photos with a caption under each.
+      // To add a group, copy a { title, photos } block. Missing photo files are hidden.
+      const interestGroups = [
+        {
+          title: "Family",
+          photos: [
+            { file: "images/interest-family-1.jpg", caption: "My brother Ruadhán" },
+            { file: "images/interest-family-2.jpg", caption: "My parents Carol & Kevin" }
+          ]
+        },
+        {
+          title: "Louth Senior Hurling",
+          photos: [
+            { file: "images/interest-louth-1.jpg", caption: "Lifting the Lory Meagher Cup!" },
+            { file: "images/interest-louth-2.jpg", caption: "Team celebrations" },
+            { file: "images/interest-louth-3.jpg", caption: "Heading down the Hogan steps" }
+          ]
+        },
+        {
+          title: "Fr Tom Burke's Hurling Club Boston",
+          photos: [
+            { file: "images/interest-hurling-1.jpg", caption: "Fr Tom's team photo before the North American Final" },
+            { file: "images/interest-hurling-2.jpg", caption: "Celebrations after the final whistle" },
+            { file: "images/interest-hurling-3.jpg", caption: "Player of the game presentation" }
+          ]
+        },
+        {
+          title: "Cork Boston Gaelic Football",
+          photos: [
+            { file: "images/interest-gaelic-1.jpg", caption: "Cork Boston team photo" },
+            { file: "images/interest-gaelic-2.jpg", caption: "Irish born vs US born match – Cork Boston representation" },
+            { file: "images/interest-gaelic-3.jpg", caption: "In action for Cork Boston" }
+          ]
+        },
+        {
+          title: "Trip to Guatemala – Hiking Mt Acatenango",
+          photos: [
+            { file: "images/interest-guatemala-1.jpg", caption: "Volcán de Fuego erupting overnight, seen from Acatenango" },
+            { file: "images/interest-guatemala-2.jpg", caption: "Fuego at sunrise" },
+            { file: "images/interest-guatemala-3.jpg", caption: "At the summit of Acatenango" }
+          ]
+        },
+        {
+          title: "Milestones",
+          photos: [
+            { file: "images/interest-milestones-1.jpg", caption: "Kilmession Shield winners – my last competitive game of soccer!" },
+            { file: "images/interest-milestones-2.jpg", caption: "BU graduation with Granda Leavy" },
+            { file: "images/interest-milestones-3.jpg", caption: "Boston's Run to Remember half marathon – the first of many!" }
+          ]
+        }
       ];
 
-      (function renderInterestPhotos(){
+      (function renderInterests(){
         const container = document.getElementById('interests-container');
-        const order = ["Hurling", "Gaelic Football", "Soccer", "Golf", "Running", "Travel"];
-        const grouped = {};
-        interestPhotos.forEach(p => { (grouped[p.category] = grouped[p.category] || []).push(p); });
-
-        order.forEach(cat => {
-          const items = grouped[cat];
-          if (!items || !items.length) return;
-
+        interestGroups.forEach(group => {
+          if (!group.photos.length) return;
           const block = document.createElement('div');
           block.className = 'interest-block';
-
           const label = document.createElement('p');
           label.className = 'interest-label';
-          label.textContent = cat;
-          block.appendChild(label);
-
+          label.textContent = group.title;
           const grid = document.createElement('div');
-          grid.className = 'gallery-grid';
-
-          items.forEach(p => {
+          grid.className = 'gallery-grid' + (group.photos.length === 2 ? ' cols-2' : '');
+          group.photos.forEach(p => {
             const fig = document.createElement('figure');
             fig.className = 'gallery-item';
             const img = document.createElement('img');
-            img.src = p.file;
-            img.alt = cat;
+            img.src = p.file; img.alt = p.caption; img.loading = 'lazy';
             img.onerror = function(){ fig.style.display = 'none'; };
-            fig.appendChild(img);
+            const cap = document.createElement('figcaption');
+            cap.textContent = p.caption;
+            fig.append(img, cap);
             grid.appendChild(fig);
           });
-
-          block.appendChild(grid);
+          block.append(label, grid);
           container.appendChild(block);
         });
       })();
